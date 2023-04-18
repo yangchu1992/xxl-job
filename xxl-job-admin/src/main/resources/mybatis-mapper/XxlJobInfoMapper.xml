@@ -12,8 +12,10 @@
 	    <result column="add_time" property="addTime" />
 	    <result column="update_time" property="updateTime" />
 
-	    <result column="author" property="author" />
-	    <result column="alarm_email" property="alarmEmail" />
+		<result column="author" property="author" />
+		<result column="alarm_url" property="alarmUrl" />
+		<result column="alarm_type" property="alarmType" />
+
 
 		<result column="schedule_type" property="scheduleType" />
 		<result column="schedule_conf" property="scheduleConf" />
@@ -45,7 +47,8 @@
 		t.add_time,
 		t.update_time,
 		t.author,
-		t.alarm_email,
+		t.alarm_type,
+		t.alarm_url,
 		t.schedule_type,
 		t.schedule_conf,
 		t.misfire_strategy,
@@ -118,7 +121,8 @@
 			add_time,
 			update_time,
 			author,
-			alarm_email,
+			alarm_url,
+			alarm_type,
 			schedule_type,
 			schedule_conf,
 			misfire_strategy,
@@ -142,7 +146,8 @@
 			#{addTime},
 			#{updateTime},
 			#{author},
-			#{alarmEmail},
+			#{alarmUrl},
+			#{alarmType},
 			#{scheduleType},
 			#{scheduleConf},
 			#{misfireStrategy},
@@ -180,7 +185,8 @@
 			job_desc = #{jobDesc},
 			update_time = #{updateTime},
 			author = #{author},
-			alarm_email = #{alarmEmail},
+			alarm_url = #{alarmUrl},
+			alarm_Type = #{alarmType},
 			schedule_type = #{scheduleType},
 			schedule_conf = #{scheduleConf},
 			misfire_strategy = #{misfireStrategy},

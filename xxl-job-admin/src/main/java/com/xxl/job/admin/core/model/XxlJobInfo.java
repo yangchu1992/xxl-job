@@ -18,7 +18,9 @@ public class XxlJobInfo {
 	private Date updateTime;
 	
 	private String author;		// 负责人
-	private String alarmEmail;	// 报警邮件
+
+	private String alarmUrl;	// 报警邮件
+	private Integer alarmType;//告警类型 1-邮件 2-webhook
 
 	private String scheduleType;			// 调度类型
 	private String scheduleConf;			// 调度配置，值含义取决于调度类型
@@ -91,12 +93,20 @@ public class XxlJobInfo {
 		this.author = author;
 	}
 
-	public String getAlarmEmail() {
-		return alarmEmail;
+	public String getAlarmUrl() {
+		return alarmUrl;
 	}
 
-	public void setAlarmEmail(String alarmEmail) {
-		this.alarmEmail = alarmEmail;
+	public void setAlarmUrl(String alarmUrl) {
+		this.alarmUrl = alarmUrl;
+	}
+
+	public Integer getAlarmType() {
+		return alarmType;
+	}
+
+	public void setAlarmType(Integer alarmType) {
+		this.alarmType = alarmType;
 	}
 
 	public String getScheduleType() {
