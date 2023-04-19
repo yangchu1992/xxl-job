@@ -89,7 +89,7 @@ $(function() {
 	                	}
 	                },
 	                { "data": 'author', "visible" : true, "width":'10%'},
-	                { "data": 'alarmEmail', "visible" : false},
+	                { "data": 'alarmUrl', "visible" : false},
 	                {
 	                	"data": 'triggerStatus',
 						"width":'10%',
